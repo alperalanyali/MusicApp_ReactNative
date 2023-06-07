@@ -2,8 +2,6 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
     container:{
-        borderBottomColor:'darkgray',
-        borderBottomWidth:1,
         padding:20 ,
         flexDirection:'row'
     },
@@ -17,23 +15,32 @@ export default StyleSheet.create({
         fontWeight:'bold'
     },
     artist:{
-        fontSize:16,
+        fontSize:14,
         fontWeight:'700'
     },
     year:{
         fontSize:14,
         color:'darkgrey',
+        marginHorizontal:10
     },
-    sold_out:{
+    sold_out_container:{
+        borderColor:'red',
+        borderWidth:1,
+        borderRadius:5,
+        padding: 5,
+    },
+    sold_out_title:{
         fontSize:14,
         color:'red',
         fontWeight:'bold'
     },
     info_container:{
         flex:1,
-        flexDirection:'row',
-        justifyContent:'space-between',
-        marginTop:10
+        flexDirection:'row',        
+        marginTop:15,
+        alignContent:'center',
+        justifyContent:'center'
+        
     },
     inne_container:{
         margin:20

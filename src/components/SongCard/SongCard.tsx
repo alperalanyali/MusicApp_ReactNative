@@ -4,6 +4,7 @@ import React from 'react';
 import styles from './SongCard-style'
 
 const SongCard = ({song})=>{
+
     return(
         <View style={styles.container}>
             
@@ -17,7 +18,10 @@ const SongCard = ({song})=>{
                 <View style={styles.info_container}>
                     <Text style={styles.artist}>{song.artist}</Text>
                     <Text style={styles.year}>{song.year}</Text>
-                    {song.isSoldOut && <Text style={styles.sold_out}>TÜKENDİ</Text>}
+                    {song.isSoldOut && 
+                    <View style={styles.sold_out_container}>
+                            <Text style={styles.sold_out_title}>TÜKENDİ</Text>
+                        </View>}
                 </View>
             </View>
         </View>
