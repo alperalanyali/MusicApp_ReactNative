@@ -12,6 +12,7 @@ const App = () => {
       <View style={styles.container}>
         <Text>Music App</Text>
         <FlatList
+          keyExtractor={item => item.id.toString()}
           data={music_data}
           renderItem={renderMusic}
         />
